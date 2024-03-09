@@ -1,0 +1,85 @@
+main {
+    padding: 2rem;
+}
+
+h2 {
+    font-family: 'Damion', serif;
+    color: #f5c555;
+    font-weight: 400;
+    text-align: center;
+    font-size: 5rem;
+}
+
+h3 {
+    color:#d679a6;
+    font-size: 3rem;
+}
+
+h4 {
+    color:#f5c555;
+    font-size: 2rem;
+}
+
+main img {
+    max-width: 300px;
+    max-height: 300px;
+    align-self: center;
+}
+
+.sectionBoutique {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: black;
+    justify-content: center;
+}
+
+.ficheProduit {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: 8rem 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.sortes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.addCart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn__add {
+    background-color: #f5c555;
+    border: none;
+    padding: 1rem;
+    font: 1.5rem 'Montserrat', sans-serif;
+    margin: 1rem;
+}
+
+.imgChandails {
+    margin: 5rem;
+}
+
+li .active {
+    color:#d679a6;
+}
+
+
+
+@media screen and (min-width: 800px) {
+    .sectionBoutique {
+        background-color:rgba(0, 0, 0, 0.0);
+        justify-content: space-around;
+    }
+
+    .ficheProduit {
+        align-self: auto;
+    }
+}
