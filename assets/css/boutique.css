@@ -66,12 +66,13 @@ main img {
     align-items: center;
 }
 
-.btn__add {
+.btn__add-0 {
     background-color: #f5c555;
     border: none;
     padding: 1rem;
     font: 1.5rem 'Montserrat', sans-serif;
     margin: 1rem;
+    cursor: pointer;
 }
 
 .figureBoutique {
@@ -86,6 +87,65 @@ li .active {
     color:#d679a6;
 }
 
+.modal-boutique-visible {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-boutique-hidden {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal-content {
+    background-color: #f5c555;
+    color: black;
+    min-width: 40%;
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-close-modal {
+    background-color: #d679a600;
+    border: none;
+    font-size: 3rem;
+    padding: 1rem 1rem 0 0;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.modal-text {
+    padding: 0 5rem 5rem 5rem;
+}
+
+.modal-text h3 {
+    color: black;
+}
+
+.article-name {
+    text-align: center;
+    font-size: 2rem;
+}
 
 
 @media screen and (min-width: 800px) {
@@ -102,3 +162,7 @@ li .active {
         border-bottom: 1px solid #f5c555;
     }
 }
+
+
+
+/* À vérifier : la barre de défilement ne disparait pas avec la modale, malgrès le overflow hidden. Pour le côté responsive, l'image de fond grossit quand on agrandit l'écran, ce qui décale le h2, qui est parfois sur fond noir, parfois sur l'image de fond. 
