@@ -1,0 +1,136 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__spectacles{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+}
+
+.titre__spectacles{
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    letter-spacing: 5px;
+    align-items: center;
+    padding-bottom: 30px;
+    font-size: 40px;
+    color: #d679a6;
+    font-family: 'Damion', serif !important;;
+}
+
+.fiche__spectacle{
+    list-style: none;
+    margin-top: 0;
+}
+
+.fiche__spectacle_01, .fiche__spectacle_02, .fiche__spectacle_03, .fiche__spectacle_04, .fiche__spectacle_05, .fiche__spectacle_06, .fiche__spectacle_07, .fiche__spectacle_08, .fiche__spectacle_09, .fiche__spectacle_10, .fiche__spectacle_11, .fiche__spectacle_12, .fiche__spectacle_13{
+    background-color: rgba(238, 174, 0, 0.2) ;
+    border: solid 1px palevioletred;
+    height: 13vh;
+    width: 80vw;
+} 
+
+.spectacles__aimes{
+    display: flex;
+    align-self: flex-end;
+    color: #f5c555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    margin-bottom: 5px;
+    font-size: 12px;
+    padding-right: 3vw;
+}
+
+.salle_date_ville{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding-left: 25px;
+    padding-top: 15px;
+    float: inline-start;
+}
+
+.salle{
+    display: flex;
+    margin-bottom: 0;
+    font-size: larger;
+}
+.date{
+    display: flex;
+    margin-top: 0;
+    font-size: smaller;
+}
+
+.ville{
+    font-weight: 300;
+    font-size: x-small;
+}
+.btn__spectacles{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn__visiter__site{
+    display: flex;
+    float: right;
+    position: relative;
+    background-color: #d679a6;
+    border: solid #f5c555 1px;
+    height: 4vh;
+    width: 8vw;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: xx-small;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.heart__button{
+    display: flex;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;  
+    height: 35px;
+    width: 35px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    padding-top: 10px;
+}
+
+@media screen and (min-width: 800px) {
+    header {
+        grid-column: 2 / 16;}
+    .btn__visiter__site{
+            width: 60px;
+        }
+    }
+
+    header > nav > ul {
+        display: flex;
+    }
+
+
+@media screen and (min-width: 1224px) {
+    header > div {
+        height: 100vh;
+    }
+
+    header > nav {
+        background-color: transparent;
+    }
+}
