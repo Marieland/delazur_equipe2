@@ -82,11 +82,11 @@ main{
 .btn__visiter__site{
     display: flex;
     float: right;
-    position: relative;
+    position: sticky;
     background-color: #d679a6;
     border: solid #f5c555 1px;
-    height: 4vh;
-    width: 8vw;
+    height: 40px;
+    width: ;
     margin-top: 20px;
     margin-right: 20px;
     padding-left: 15px;
@@ -112,25 +112,25 @@ main{
     padding-top: 10px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1200px) {
     header {
-        grid-column: 2 / 16;}
-    .btn__visiter__site{
-            width: 60px;
-        }
+        grid-column: 2 / 16;
     }
-
     header > nav > ul {
         display: flex;
     }
-
-
-@media screen and (min-width: 1224px) {
     header > div {
         height: 100vh;
     }
-
     header > nav {
         background-color: transparent;
+    }
+    .spectacles__aimes {
+        position: relative;
+    }
+}
+@media screen and (max-width: 800px) {
+    .spectacles__aimes{
+        padding-right: 50px;
     }
 }
