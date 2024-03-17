@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Damion&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/app.css">
-    <link rel="stylesheet" href="./assets/css/spectacles.css">
 </head>
 <body>
 <header>
@@ -21,18 +20,18 @@
     <nav>
         <ul>
             <li><a class="serif" href="./index.html">Accueil</a></li>
-            <li><a class="serif" href="./spectacles.html">Spectacles</a></li>
+            <li><a class="serif active" href="./spectacles.html">Spectacles</a></li>
             <li><a class="serif" href="./boutique.html">Boutique</a></li>
             <li><a class="serif" href="./contact.html">Contact</a></li>
         </ul>
     </nav>
 </header>
 <main class="main__spectacles">
-    <p class="titre__spectacles">SPECTACLES</p>
-    <p class="spectacles__aimes">Nombre de spectacles aimés → 0</p>
-    <ul class="fiche__spectacle">
+    <h2 class="titre__spectacles">SPECTACLES</h2>
+    <p class="spectacles__aimes">Nombre de spectacles aimés <span class="span_arrow">→</span><span class="count"> 0</span></p>
+    <ul class="fiches__spectacles">
         <li>
-            <div class="fiche__spectacle_01">
+            <div class="fiche__spectacle">
                 <div class="salle_date_ville">
                     <p class="salle">Imperial Bell</p>
                     <p class="date">28 mai 2024</p>
@@ -40,12 +39,14 @@
                 </div>
                 <div class="btn__spectacles">
                     <a href="https://www.imperialbell.com/"><button class="btn__visiter__site">VISITER LE SITE</button></a>
-                    <button class="heart__button" onclick="changeHeart(event)"><img class="heart__icon" src="/assets/img/heart_empty.png" alt="Empty Heart"></button>
+                    <button class="heart__button" onclick="changeHeart(event)">
+                        <img class="heart__icon" src="/assets/img/heart_empty.png" alt="Empty Heart">
+                    </button>
                 </div>
             </div>
         </li>
         <li>
-            <div class="fiche__spectacle_02">
+            <div class="fiche__spectacle">
                 <div class="salle_date_ville">
                     <p class="salle">ANTI Bar et Spectacles</p>
                     <p class="date">4 juin 2021</p>
@@ -53,12 +54,14 @@
                 </div>
                 <div class="btn__spectacles">
                     <a href="https://lanti.ca/"><button class="btn__visiter__site">VISITER LE SITE</button></a>
-                    <button class="heart__button" onclick="changeHeart(event)"><img class="heart__icon" src="/assets/img/heart_empty.png" alt="Empty Heart"></button>
+                    <button class="heart__button" onclick="changeHeart(event)">
+                        <img class="heart__icon" src="/assets/img/heart_empty.png" alt="Empty Heart">
+                    </button>
                 </div>
             </div>
         </li>
         <li>
-            <div class="fiche__spectacle_03">
+            <div class="fiche__spectacle">
                 <div class="salle_date_ville">
                     <p class="salle">Source de la Martinière</p>
                     <p class="date">11 juin 20211</p>
@@ -66,12 +69,14 @@
                 </div>
                 <div class="btn__spectacles">
                     <a href="https://www.facebook.com/lasourcedelamartiniere/"><button class="btn__visiter__site">VISITER LE SITE</button></a>
-                    <button class="heart__button" onclick="changeHeart(event)"><img class="heart__icon" src="/assets/img/heart_empty.png" alt="Empty Heart"></button>
+                    <button class="heart__button" onclick="changeHeart(event)">
+                        <img class="heart__icon" src="/assets/img/heart_empty.png" alt="Empty Heart">
+                    </button>
                 </div>
             </div>
         </li>
         <li>
-            <div class="fiche__spectacle_04">
+            <div class="fiche__spectacle">
                 <div class="salle_date_ville">
                     <p class="salle">Club Soda</p>
                     <p class="date">18 juin 2021</p>
@@ -79,12 +84,14 @@
                 </div>
                 <div class="btn__spectacles">
                     <a href="https://clubsoda.ca/fr/index.php"><button class="btn__visiter__site">VISITER LE SITE</button></a>
-                    <button class="heart__button" onclick="changeHeart(event)"><img class="heart__icon" src="/assets/img/heart_empty.png" alt="Empty Heart"></button>
+                    <button class="heart__button" onclick="changeHeart(event)">
+                        <img class="heart__icon" src="/assets/img/heart_empty.png" alt="Empty Heart">
+                    </button>
                 </div>
             </div>
         </li>
         <li>
-            <div class="fiche__spectacle_05">
+            <div class="fiche__spectacle">
                 <div class="salle_date_ville">
                     <p class="salle">Café Campus</p>
                     <p class="date">25 juin 2021</p>
@@ -92,12 +99,14 @@
                 </div>
                 <div class="btn__spectacles">
                     <a href="https://www.cafecampus.com/"><button class="btn__visiter__site">VISITER LE SITE</button></a>
-                    <button class="heart__button" onclick="changeHeart(event)"><img class="heart__icon" src="/assets/img/heart_empty.png" alt="Empty Heart"></button>
+                    <button class="heart__button" onclick="changeHeart(event)">
+                        <img class="heart__icon" src="/assets/img/heart_empty.png" alt="Empty Heart">
+                    </button>
                 </div>
             </div>
         </li>
         <li>
-            <div class="fiche__spectacle_06">
+            <div class="fiche__spectacle">
                 <div class="salle_date_ville">
                     <p class="salle">Centre des arts Juliette-Lassonde</p>
                     <p class="date">2 juillet 2021</p>
@@ -105,12 +114,14 @@
                 </div>
                 <div class="btn__spectacles">
                     <a href="https://www.centredesarts.ca/"><button class="btn__visiter__site">VISITER LE SITE</button></a>
-                    <button class="heart__button" onclick="changeHeart(event)"><img class="heart__icon" src="/assets/img/heart_empty.png" alt="Empty Heart"></button>
+                    <button class="heart__button" onclick="changeHeart(event)">
+                        <img class="heart__icon" src="/assets/img/heart_empty.png" alt="Empty Heart">
+                    </button>
                 </div>
             </div>
         </li>
         <li>
-            <div class="fiche__spectacle_07">
+            <div class="fiche__spectacle">
                 <div class="salle_date_ville">
                     <p class="salle">Centre culturel de Beloeil</p>
                     <p class="date">9 juillet 2021</p>
@@ -118,12 +129,14 @@
                 </div>
                 <div class="btn__spectacles">
                     <a href="https://diffusionscoulisse.ca/"><button class="btn__visiter__site">VISITER LE SITE</button></a>
-                    <button class="heart__button" onclick="changeHeart(event)"><img class="heart__icon" src="/assets/img/heart_empty.png" alt="Empty Heart"></button>
+                    <button class="heart__button" onclick="changeHeart(event)">
+                        <img class="heart__icon" src="/assets/img/heart_empty.png" alt="Empty Heart">
+                    </button>
                 </div>
             </div>
         </li>
         <li>
-            <div class="fiche__spectacle_08">
+            <div class="fiche__spectacle">
                 <div class="salle_date_ville">
                     <p class="salle">Le carré 150</p>
                     <p class="date">16 juillet 20211</p>
@@ -131,12 +144,14 @@
                 </div>
                 <div class="btn__spectacles">
                     <a href="https://www.lecarre150.com/"><button class="btn__visiter__site">VISITER LE SITE</button></a>
-                    <button class="heart__button" onclick="changeHeart(event)"><img class="heart__icon" src="/assets/img/heart_empty.png" alt="Empty Heart"></button>
+                    <button class="heart__button" onclick="changeHeart(event)">
+                        <img class="heart__icon" src="/assets/img/heart_empty.png" alt="Empty Heart">
+                    </button>
                 </div>
             </div>
         </li>
         <li>
-            <div class="fiche__spectacle_09">
+            <div class="fiche__spectacle">
                 <div class="salle_date_ville">
                     <p class="salle">Le carré 150</p>
                     <p class="date">16 juillet 20211</p>
@@ -144,12 +159,14 @@
                 </div>
                 <div class="btn__spectacles">
                     <a href="https://www.lecarre150.com/"><button class="btn__visiter__site">VISITER LE SITE</button></a>
-                    <button class="heart__button" onclick="changeHeart(event)"><img class="heart__icon" src="/assets/img/heart_empty.png" alt="Empty Heart"></button>
+                    <button class="heart__button" onclick="changeHeart(event)">
+                        <img class="heart__icon" src="/assets/img/heart_empty.png" alt="Empty Heart">
+                    </button>
                 </div>
             </div>
         </li>
         <li>
-            <div class="fiche__spectacle_10">
+            <div class="fiche__spectacle">
                 <div class="salle_date_ville">
                     <p class="salle">Amphithéâtre Cogeco</p>
                     <p class="date">23 juillet 20211</p>
@@ -157,12 +174,14 @@
                 </div>
                 <div class="btn__spectacles">
                     <a href="https://www.amphitheatrecogeco.com/spectacles"><button class="btn__visiter__site">VISITER LE SITE</button></a>
-                    <button class="heart__button" onclick="changeHeart(event)"><img class="heart__icon" src="/assets/img/heart_empty.png" alt="Empty Heart"></button>
+                    <button class="heart__button" onclick="changeHeart(event)">
+                        <img class="heart__icon" src="/assets/img/heart_empty.png" alt="Empty Heart">
+                    </button>
                 </div>
             </div>
         </li>
         <li>
-            <div class="fiche__spectacle_11">
+            <div class="fiche__spectacle">
                 <div class="salle_date_ville">
                     <p class="salle">Salle Odyssée</p>
                     <p class="date">30 juillet 2021</p>
@@ -170,12 +189,14 @@
                 </div>
                 <div class="btn__spectacles">
                     <a href="http://www.maisondelaculture.ca/Salle-Odyssee/index.html"><button class="btn__visiter__site">VISITER LE SITE</button></a>
-                    <button class="heart__button" onclick="changeHeart(event)"><img class="heart__icon" src="/assets/img/heart_empty.png" alt="Empty Heart"></button>
+                    <button class="heart__button" onclick="changeHeart(event)">
+                        <img class="heart__icon" src="/assets/img/heart_empty.png" alt="Empty Heart">
+                    </button>
                 </div>
             </div>
         </li>
         <li>
-            <div class="fiche__spectacle_12">
+            <div class="fiche__spectacle">
                 <div class="salle_date_ville">
                     <p class="salle">Madrid 2.0</p>
                     <p class="date">6 août 2021</p>
@@ -183,12 +204,14 @@
                 </div>
                 <div class="btn__spectacles">
                     <a href="http://www.lemadrid.ca/fr/index.php"><button class="btn__visiter__site">VISITER LE SITE</button></a>
-                    <button class="heart__button" onclick="changeHeart(event)"><img class="heart__icon" src="/assets/img/heart_empty.png" alt="Empty Heart"></button>
+                    <button class="heart__button" onclick="changeHeart(event)">
+                        <img class="heart__icon" src="/assets/img/heart_empty.png" alt="Empty Heart">
+                    </button>
                 </div>
             </div>
         </li>
         <li>
-            <div class="fiche__spectacle_13">
+            <div class="fiche__spectacle">
                 <div class="salle_date_ville">
                     <p class="salle">Le Zenith</p>
                     <p class="date">13 août 2021</p>
@@ -196,39 +219,11 @@
                 </div>
                 <div class="btn__spectacles">
                     <a href="https://lezenithsteustache.ca/"><button class="btn__visiter__site">VISITER LE SITE</button></a>
-                    <button class="heart__button" onclick="changeHeart(event)"><img class="heart__icon" src="/assets/img/heart_empty.png" alt="Empty Heart"></button>
+                    <button class="heart__button" onclick="changeHeart(event)">
+                        <img class="heart__icon" src="/assets/img/heart_empty.png" alt="Empty Heart">
+                    </button>
                 </div>
             </div>
         </li>
     </ul>
 </main>
-<footer>
-    <div>
-        <img src="./assets/img/delazur_logo.png" alt="Logo Delazur">
-    </div>
-    <div>
-        <ul>
-            <li><a href="./index.html">Accueil</a></li>
-            <li><a href="./spectacles.html">Spectacles</a></li>
-            <li><a href="./boutique.html">Boutique</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
-    </div>
-    <div>
-        <ul>
-            <li><a href="https://www.instagram.com/delazurband/" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="https://music.apple.com/us/artist/delazur/1502322364" aria-label="Apple Music" target="_blank"><i class="fab fa-apple"></i></a></li>
-            <li><a href="https://music.youtube.com/channel/UCgWAueQ2PGlzKfPIjrtn05g" aria-label="Youtube Music" target="_blank"><i class="far fa-play-circle"></i></a></li>
-            <li><a href="https://www.facebook.com/delazurband/" aria-label="Facebook" target="_blank"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="https://open.spotify.com/artist/1YG9iUkHCKcIEopGLn5QYb" aria-label="Spotify" target="_blank"><i class="fab fa-spotify"></i></a></li>
-            <li><a href="https://www.youtube.com/channel/UCNU_NVl0zzl5wluB0_9fNoA" aria-label="Youtube" target="_blank"><i class="fab fa-youtube"></i></a></li>
-            <li><a href="https://delazur.bandcamp.com/album/azur-mimosa" aria-label="Bandcamp" target="_blank"><i class="fab fa-bandcamp"></i></a></li>
-        </ul>
-    </div>
-    <div>
-        <p>Production en médias interactifs</p>
-        <p>GR.08 - Mars 2024</p>
-    </div>
-</footer>
-</body>
-</html>

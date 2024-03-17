@@ -21,82 +21,101 @@ main{
     padding-bottom: 30px;
     font-size: 40px;
     color: #d679a6;
-    font-family: 'Damion', serif !important;;
+    font-family: 'Damion', serif;
+}
+
+.fiches__spectacles{
+    list-style: none;
+    margin-top: 0;
+    padding-left: 0;
 }
 
 .fiche__spectacle{
-    list-style: none;
-    margin-top: 0;
-}
-
-.fiche__spectacle_01, .fiche__spectacle_02, .fiche__spectacle_03, .fiche__spectacle_04, .fiche__spectacle_05, .fiche__spectacle_06, .fiche__spectacle_07, .fiche__spectacle_08, .fiche__spectacle_09, .fiche__spectacle_10, .fiche__spectacle_11, .fiche__spectacle_12, .fiche__spectacle_13{
-    background-color: rgba(238, 174, 0, 0.2) ;
-    border: solid 1px palevioletred;
-    height: 13vh;
+    display: flex;
+    background-color: rgba(238, 174, 0, 0.3) ;
+    border: solid 1px #d679a6;
+    height: 125px;
     width: 80vw;
-} 
+    justify-content: space-between;
+    align-items: center;
+}
 
 .spectacles__aimes{
     display: flex;
     align-self: flex-end;
     color: #f5c555;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 1.5rem 'Montserrat', sans-serif;
     font-weight: 200;
     margin-bottom: 5px;
     font-size: 12px;
-    padding-right: 3vw;
+    padding-right: 7rem;
+}
+.count {
+    color: #f5c555;
+}
+.span_arrow {
+    color: white;
 }
 
+.span_arrow{
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
 .salle_date_ville{
     display: flex;
     flex-direction: column;
-    position: absolute;
     padding-left: 25px;
     padding-top: 15px;
-    float: inline-start;
 }
 
 .salle{
     display: flex;
     margin-bottom: 0;
-    font-size: larger;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 0;
 }
+
 .date{
     display: flex;
     margin-top: 0;
-    font-size: smaller;
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
 .ville{
     font-weight: 300;
-    font-size: x-small;
+    font-size: 1rem;
+    margin-top: 0;
 }
+
 .btn__spectacles{
     display: flex;
     flex-direction: column;
-    float: right;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
 
 .btn__visiter__site{
     display: flex;
-    float: right;
-    position: sticky;
     background-color: #d679a6;
     border: solid #f5c555 1px;
     height: 40px;
-    width: ;
+    width: 110px;
     margin-top: 20px;
     margin-right: 20px;
     padding-left: 15px;
     padding-right: 15px;
-    font-size: xx-small;
+    font-size: .9rem;
     font-weight: 400;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    text-decoration-line: none;
 }
+
 .heart__button{
     display: flex;
     background-color: Transparent;
@@ -111,7 +130,33 @@ main{
     margin-right: 20px;
     padding-top: 10px;
 }
+li .active {
+    color:#d679a6;
+}
 
+.count {
+    position: relative;
+    display: inline-block;
+}
+
+.pop-heart {
+    position: absolute;
+    top: 0;
+    left: calc(100% + 5px); /* Adjust the 5px value to your desired spacing */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+@keyframes pop {
+    0% {
+    transform: scale(0);
+    opacity: 0;
+    }
+    50% {
+    transform: scale(1.5);
+    opacity: 1;
+    }
+}
 @media screen and (min-width: 1200px) {
     header {
         grid-column: 2 / 16;
@@ -126,11 +171,10 @@ main{
         background-color: transparent;
     }
     .spectacles__aimes {
-        position: relative;
     }
 }
 @media screen and (max-width: 800px) {
     .spectacles__aimes{
-        padding-right: 50px;
+        padding-right: 70px;
     }
 }
