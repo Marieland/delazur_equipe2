@@ -17,7 +17,7 @@ function changeHeart(event) {
         // Mettre à jour le texte du compteur avec la nouvelle valeur.
         count.textContent = heartCount;
 
-        // Créer un élément image pour l'animation du cœur qui apparaît.
+        // Créer un élément image pour l'animation du coeur qui apparaît.
         const popHeart = document.createElement('img');
         popHeart.src = '/assets/img/heart_full.png';
         popHeart.classList.add('pop-heart');
@@ -37,7 +37,7 @@ function changeHeart(event) {
             }, 500);
         }, 100);
     } else {
-        // Sinon, remplacer l'icône pleine par l'icône vide et reduire le compte.
+        // Sinon, remplace l'icône plein par l'icône vide et reduire le compte.
         heartIcon.src = "/assets/img/heart_empty.png";
         heartCount--;
 
@@ -45,3 +45,9 @@ function changeHeart(event) {
         count.textContent = heartCount;
     }
 }
+
+// Sélectionner les boutons en coeur et leurs ajouter un écouteur d'événements.
+const heartButtons = document.querySelectorAll('.heart__button');
+heartButtons.forEach(button => {
+    button.addEventListener('click', changeHeart);
+});
