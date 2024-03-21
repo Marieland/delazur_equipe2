@@ -4,6 +4,7 @@ main{
     align-items: center;
 }
 
+
 .main__spectacles{
     display: flex;
     align-self: center;
@@ -90,12 +91,24 @@ main{
     margin-top: 0;
 }
 
+.btn__spectacles a {
+    text-decoration: none;
+    height: 40px;
+    width: 110px;
+}    
+
+.btn__spectacles a:focus{
+    -webkit-box-shadow: 0px 0px 27px 4px #A751AD; 
+    box-shadow: 0px 0px 27px 4px #A751AD;
+    outline: none;
+}
 .btn__spectacles{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    margin-right: 20px;
 }
 
 .btn__visiter__site{
@@ -104,10 +117,6 @@ main{
     border: solid #f5c555 1px;
     height: 40px;
     width: 110px;
-    margin-top: 20px;
-    margin-right: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
     font-size: .9rem;
     font-weight: 400;
     justify-content: center;
@@ -115,21 +124,41 @@ main{
     cursor: pointer;
     text-decoration-line: none;
 }
+.btn__visiter__site:focus{
+    outline: none;
+    text-decoration-line: none;
+    -webkit-box-shadow: 0px 0px 27px 4px #A751AD; 
+    box-shadow: 0px 0px 27px 4px #A751AD;
+}
+
 
 .heart__button{
     display: flex;
     background-color: Transparent;
     background-repeat:no-repeat;
     border: none;
-    cursor:pointer;
+    cursor:pointer;     
     overflow: hidden;  
     height: 35px;
     width: 35px;
-    align-items: center;
     justify-content: center;
-    margin-right: 20px;
+    margin-top: 10px;
     padding-top: 10px;
+    padding-bottom: 25px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
+
+.heart__button:focus{
+    outline: none;
+    border-bottom: 1px double #f5c555;
+}
+.heart__icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 li .active {
     color:#d679a6;
 }
@@ -170,8 +199,7 @@ li .active {
     header > nav {
         background-color: transparent;
     }
-    .spectacles__aimes {
-    }
+
 }
 @media screen and (max-width: 800px) {
     .spectacles__aimes{

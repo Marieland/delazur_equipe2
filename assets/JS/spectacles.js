@@ -51,3 +51,7 @@ const heartButtons = document.querySelectorAll('.heart__button');
 heartButtons.forEach(button => {
     button.addEventListener('click', changeHeart);
 });
+
+document.querySelectorAll('.btn__visiter__site').forEach(button => {
+    button.setAttribute('tabindex', '-1');
+});
