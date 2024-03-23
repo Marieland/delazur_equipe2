@@ -1,27 +1,28 @@
 .azur-mimosa{
-background-color:  #f5c555;
-height: 300px;
-color: black;
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: space-between;
-grid-column: 1 / 6;
+  background-color: #f5c555b4;
+  height: 300px;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
+.azur-mimosa_img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  visibility: hidden;
+  justify-content: flex-start;
+}
 
-.azur-mimosa_img{
-    width: 225px;
-    height: 225px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  
+.img-mobile img {
+  width: 250px;
+  height: 250px;
+  margin-left: 30%;
 }
 
 #img-1{
-  display: flex;
-  flex-direction: row;
+  margin: auto;
   z-index: 10;
 }
 
@@ -97,99 +98,89 @@ grid-column: 1 / 6;
   filter: opacity(20%);
 }
 
-
-
-#azur-mimosa_title{
+.text_titre-spotify {
+  margin-top: 30px;
+  position: absolute;
+  z-index: 11;
+  padding-left: 50px;
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
 }
 
 .spotify{
+  display: flex;
   padding-right: 40px;
+  width: 100%;
 }
 
-  .spotify > h1{
-      font: 'Montserrat', sans-serif;
-      font-weight: bold;
-    }
-
-.spotify_icons{
-  display: inline-block;
+.text_titre-spotify > h2 {
+  font: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 4rem;
 }
 
-.spotify_text{
-  display: inline-block;
-  flex-direction: row;
-  justify-content: flex-end;
+.spotify_text {
+  font-size: 1.5rem;
 }
 
-
-#spotify_logo{
-  height: 20px;
-  width: 20px;
+.spotify_text p {
+  font-size: 1.7rem;
 }
 
-#fleche{
-  height: 20px;
-  width: 20px;
+.spotify_icons {
+  display: flex;
+}
+
+#spotify_logo, #fleche {
+  margin: 10px;
+  height: 35px;
+  width: 35px;
+}
+
+.fond_noir {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.who_is {
+  padding: 20px;
 }
 
 #who_is_title{
-    color: #d679a6;
-    font-family: 'Damion', serif;
+  color: #d679a6;
+  font-family: 'Damion', serif;
 }
 
 /*creating carousel*/
-
 .carousel{
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    grid-column: 1 / 6;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:30px;
+}
 
-  
-  .carousel button {
-    position: absolute;
-    background:none;
-    border: none;
-    outline: none;
-    font-size: 2.6rem;
-    z-index: 2;
-    cursor: pointer;
-    color: rgb(243, 241, 241);
-    transform: translate(-50%);
-    top: 50%;
-  }
-  
-  #prev{
-    left: 5px;
-  }
-  
-  #next{
-    right: 5px;
-  }
-  
+.bio-container{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
 
-  /*creating overlay*/
-  .image-container{
-    position: relative;
-    width:100vw;
-    height:auto;
-    cursor: pointer;
-    overflow: hiden;
-    display: flex;
-    grid-column: 1 / 6;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 30px;
-  }
-
+/*creating overlay*/
+.image-container{
+  position: relative;
+  width:fit-content;
+  height:auto;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
 
 .image-container img{
-    width: fit-content;
-    height: 500px;
-    transition: 0.5s ease;
+  width: fit-content;
+  height: 500px;
+  transition: 0.5s ease;
 }
 
 .image-container .overlay {
@@ -205,34 +196,33 @@ grid-column: 1 / 6;
 }
 
 .image-container:hover .overlay{
-opacity: 1;
+  opacity: 1;
 }
 
-.image-container .overlay li table{
-    color: #fff;
-    font:'Montserrat', sans-serif;
+.image-container .overlay  table{
+  color: #fff;
+  font:'Montserrat', sans-serif;
 }
 
 .image-container .overlay p{
-    color: #02d22d;
-}
-
-li{
-    list-style: none;
+  color: #02d22d;
 }
 
 table{
-    height: 500px;
-    width: 300px;
-    justify-content: left;
+  height: 500px;
+  width: 100%;
+  justify-content: left;
+  padding-top: 30px;
 }
 
 #alain ,#jacques ,#dove ,#dr_homme {
   color: #f5c555;
-  align-items: left;
+  align-items: center;
   font: 'Montserrat', sans-serif;
   font-weight: 400;
-  margin: 0;
+  z-index: 2;
+  margin: 10px;
+  position: absolute;
 }
 
 td, th {
@@ -240,13 +230,27 @@ td, th {
   font-weight: 300;
 }
 
-.slide{
-  height: fit-content;
-}
 
+@media screen and (min-width:1200px) {
 
-@media screen and (max-width: 800px){
+  .carousel{
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    }
 
-  
+    .azur-mimosa_img{
+      visibility: visible;
+    }
+    
+
+    .text_titre-spotify {
+      position: absolute;
+      right: 10%;
+    }
+
+    .img-mobile img {
+      display: none;
+    }
 
 }
