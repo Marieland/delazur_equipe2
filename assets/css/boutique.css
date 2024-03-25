@@ -1,8 +1,8 @@
-main {
+.main_boutique {
     padding: 2rem;
 }
 
-h2 {
+.boutique_h2 {
     font-family: 'Damion', serif;
     color: #f5c555;
     font-weight: 400;
@@ -10,7 +10,7 @@ h2 {
     font-size: 5rem;
 }
 
-h3 {
+.boutique_h3 {
     color:#d679a6;
     font-size: 3rem;
 }
@@ -20,7 +20,7 @@ h4 {
     font-size: 2rem;
 }
 
-main img {
+.main_boutique .img_boutique {
     max-width: 300px;
     max-height: 300px;
     align-self: center;
@@ -74,6 +74,10 @@ main img {
     margin: 1rem;
     cursor: pointer;
 }
+
+.btn__add-0:hover, .btn__add-0:focus {
+    box-shadow: inset 5px 5px 10px 10px rgba(0, 0, 0, 0.15);
+    }
 
 .figureBoutique {
     width: 300px;
@@ -133,6 +137,12 @@ li .active {
     align-self: flex-end;
     cursor: pointer;
 }
+
+.btn-close-modal:hover, .btn-close-modal:focus {
+    font-weight: 900;
+}
+
+
 
 .modal-text {
     padding: 0 5rem 5rem 5rem;
