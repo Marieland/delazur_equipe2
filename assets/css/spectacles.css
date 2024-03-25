@@ -1,0 +1,204 @@
+
+.main__spectacles{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+}
+
+.titre__spectacles{
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    letter-spacing: 5px;
+    align-items: center;
+    padding-bottom: 30px;
+    font-size: 40px;
+    color: #d679a6;
+    font-family: 'Damion', serif;
+}
+
+.fiches__spectacles{
+    list-style: none;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+.fiche__spectacle{
+    display: flex;
+    background-color: rgba(238, 174, 0, 0.3) ;
+    border: solid 1px #d679a6;
+    height: 125px;
+    width: 80vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.spectacles__aimes{
+    display: flex;
+    align-self: flex-end;
+    color: #f5c555;
+    font-family: 1.5rem 'Montserrat', sans-serif;
+    font-weight: 200;
+    margin-bottom: 5px;
+    font-size: 12px;
+    padding-right: 7rem;
+}
+.count {
+    color: #f5c555;
+}
+.span_arrow {
+    color: white;
+}
+
+.span_arrow{
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.salle_date_ville{
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    padding-top: 15px;
+}
+
+.salle{
+    display: flex;
+    margin-bottom: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.date{
+    display: flex;
+    margin-top: 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.ville{
+    font-weight: 300;
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+.btn__spectacles a {
+    text-decoration: none;
+    height: 40px;
+    width: 110px;
+}    
+
+.btn__spectacles a:focus{
+    -webkit-box-shadow: 0px 0px 27px 4px #A751AD; 
+    box-shadow: 0px 0px 27px 4px #A751AD;
+    outline: none;
+}
+.btn__spectacles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.btn__visiter__site{
+    display: flex;
+    background-color: #d679a6;
+    border: solid #f5c555 1px;
+    height: 40px;
+    width: 110px;
+    font-size: .9rem;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration-line: none;
+}
+.btn__visiter__site:focus{
+    outline: none;
+    text-decoration-line: none;
+    -webkit-box-shadow: 0px 0px 27px 4px #A751AD; 
+    box-shadow: 0px 0px 27px 4px #A751AD;
+}
+
+
+.heart__button{
+    display: flex;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;     
+    overflow: hidden;  
+    height: 35px;
+    width: 35px;
+    justify-content: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.heart__button:focus{
+    outline: none;
+    border-bottom: 1px double #f5c555;
+}
+.heart__icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li .active {
+    color:#d679a6;
+}
+
+.count {
+    position: relative;
+    display: inline-block;
+}
+
+.pop-heart {
+    position: absolute;
+    top: 0;
+    left: calc(100% + 5px); /* Adjust the 5px value to your desired spacing */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+@keyframes pop {
+    0% {
+    transform: scale(0);
+    opacity: 0;
+    }
+    50% {
+    transform: scale(1.5);
+    opacity: 1;
+    }
+}
+@media screen and (min-width: 1200px) {
+    header {
+        grid-column: 2 / 16;
+    }
+    header > nav > ul {
+        display: flex;
+    }
+    header > div {
+        height: 100vh;
+    }
+    header > nav {
+        background-color: transparent;
+    }
+
+}
+@media screen and (max-width: 800px) {
+    .spectacles__aimes{
+        padding-right: 70px;
+    }
+}
