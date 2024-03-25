@@ -137,6 +137,12 @@
   width: 35px;
 }
 
+#spotify_logo:hover {
+border: 1px solid #000000;
+box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.4);
+border-radius: 20px;
+}
+
 .fond_noir {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
@@ -150,6 +156,7 @@
 #who_is_title{
   color: #d679a6;
   font-family: 'Damion', serif;
+  font-size: 3rem;
 }
 
 /*creating carousel*/
@@ -231,12 +238,14 @@ td, th {
 }
 
 
-@media screen and (min-width:1200px) {
+
+@media screen and (min-width:800px) {
 
   .carousel{
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    width: 100%;
     }
 
     .azur-mimosa_img{
@@ -253,4 +262,14 @@ td, th {
       display: none;
     }
 
+}
+
+
+@media screen and (min-width: 1400px) {
+
+  .carousel {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
 }

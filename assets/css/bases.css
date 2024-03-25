@@ -1,11 +1,11 @@
 * {
     box-sizing: border-box;
 }
-
+ 
 html {
     font-size: 50%;
 }
-
+ 
 body {
     background-color: black;
     background-image: url("../img/header.jpg");
@@ -21,28 +21,28 @@ body {
     margin: 0;
     overflow-x: hidden;
 }
-
+ 
 main {
     grid-column: 1 / 6;
 }
-
+ 
 @media screen and (min-width: 800px) {
     body {
         grid-template-columns: repeat(16, 1fr);
         grid-row-gap: 50px;
     }
-
+ 
     main {
         grid-column: 2 / 16;
     }
 }
-
+ 
 @media screen and (min-width: 1224px) {
-
+ 
     html {
         font-size: 62.5%;
     }
-
+ 
     body {
         background-attachment: fixed;
         background-size: auto 100vh;
