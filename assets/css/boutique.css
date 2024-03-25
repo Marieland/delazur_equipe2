@@ -1,0 +1,178 @@
+.main_boutique {
+    padding: 2rem;
+}
+
+.boutique_h2 {
+    font-family: 'Damion', serif;
+    color: #f5c555;
+    font-weight: 400;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.boutique_h3 {
+    color:#d679a6;
+    font-size: 3rem;
+}
+
+h4 {
+    color:#f5c555;
+    font-size: 2rem;
+}
+
+.main_boutique .img_boutique {
+    max-width: 300px;
+    max-height: 300px;
+    align-self: center;
+}
+
+.borderPink {
+    border-bottom: 1px solid #d679a6;
+}
+
+.sectionBoutique {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-self: center;
+}
+
+.wrap {
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+    padding: 5rem 0;
+    justify-content: center;
+}
+
+.ficheProduit {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 3rem;
+}
+
+.sortes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.addCart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn__add-0 {
+    background-color: #f5c555;
+    border: none;
+    padding: 1rem;
+    font: 1.5rem 'Montserrat', sans-serif;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.btn__add-0:hover, .btn__add-0:focus {
+    box-shadow: inset 5px 5px 10px 10px rgba(0, 0, 0, 0.15);
+    }
+
+.figureBoutique {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-self: center;
+    margin: 0;
+}
+
+li .active {
+    color:#d679a6;
+}
+
+.modal-boutique-visible {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-boutique-hidden {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal-content {
+    background-color: #f5c555;
+    color: black;
+    min-width: 40%;
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-close-modal {
+    background-color: #d679a600;
+    border: none;
+    font-size: 3rem;
+    padding: 1rem 1rem 0 0;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.btn-close-modal:hover, .btn-close-modal:focus {
+    font-weight: 900;
+}
+
+
+
+.modal-text {
+    padding: 0 5rem 5rem 5rem;
+}
+
+.modal-text h3 {
+    color: black;
+}
+
+.article-name {
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+@media screen and (min-width: 800px) {
+    .sectionBoutique {
+        background-color:rgba(0, 0, 0, 0.0);
+    }
+
+    .wrap {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .borderPink {
+        border-bottom: 1px solid #f5c555;
+    }
+}
+
+
+
+/* À vérifier : la barre de défilement ne disparait pas avec la modale, malgrès le overflow hidden. Pour le côté responsive, l'image de fond grossit quand on agrandit l'écran, ce qui décale le h2, qui est parfois sur fond noir, parfois sur l'image de fond. 
