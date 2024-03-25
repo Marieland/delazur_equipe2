@@ -1,11 +1,7 @@
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 
 .main__spectacles{
+    justify-content: center;
+    align-items: center;
     display: flex;
     align-self: center;
     flex-direction: column;
