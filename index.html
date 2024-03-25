@@ -1,57 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DELAZUR</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Damion&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Damion&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="./assets/css/accueil.css">
+    <script src="accueil.js" defer></script>
 </head>
-<body>
-<header>
-    <div>
-        <img src="./assets/img/delazur_logo.png" alt="Logo de Delazur">
-        <h1 class="visuallyhidden">Delazur</h1>
-    </div>
-    <nav>
-        <ul>
-            <li><a class="serif" href="./index.html">Accueil</a></li>
-            <li><a class="serif" href="./spectacles.html">Spectacles</a></li>
-            <li><a class="serif" href="./boutique.html">Boutique</a></li>
-            <li><a class="serif" href="./contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-<main>
 
-</main>
-<footer>
-    <div>
-        <img src="./assets/img/delazur_logo.png" alt="Logo Delazur">
-    </div>
-    <div>
-        <ul>
-            <li><a href="./index.html">Accueil</a></li>
-            <li><a href="./spectacles.html">Spectacles</a></li>
-            <li><a href="./boutique.html">Boutique</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
-    </div>
-    <div>
-        <ul>
-            <li><a href="https://www.instagram.com/delazurband/" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="https://music.apple.com/us/artist/delazur/1502322364" aria-label="Apple Music" target="_blank"><i class="fab fa-apple"></i></a></li>
-            <li><a href="https://music.youtube.com/channel/UCgWAueQ2PGlzKfPIjrtn05g" aria-label="Youtube Music" target="_blank"><i class="far fa-play-circle"></i></a></li>
-            <li><a href="https://www.facebook.com/delazurband/" aria-label="Facebook" target="_blank"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="https://open.spotify.com/artist/1YG9iUkHCKcIEopGLn5QYb" aria-label="Spotify" target="_blank"><i class="fab fa-spotify"></i></a></li>
-            <li><a href="https://www.youtube.com/channel/UCNU_NVl0zzl5wluB0_9fNoA" aria-label="Youtube" target="_blank"><i class="fab fa-youtube"></i></a></li>
-            <li><a href="https://delazur.bandcamp.com/album/azur-mimosa" aria-label="Bandcamp" target="_blank"><i class="fab fa-bandcamp"></i></a></li>
-        </ul>
-    </div>
-    <div>
-        <p>Production en médias interactifs</p>
-        <p>GR.08 - Mars 2024</p>
-    </div>
-</footer>
+<body>
+    <header>
+        <div>
+            <img src="./assets/img/delazur_logo.png" alt="Logo de Delazur">
+            <h1 class="visuallyhidden">Delazur</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="serif active" href="./index.html">Accueil</a></li>
+                <li><a class="serif" href="./spectacles.html">Spectacles</a></li>
+                <li><a class="serif" href="./boutique.html">Boutique</a></li>
+                <li><a class="serif" href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="azur-mimosa">
+            <figure class="img-mobile">
+                <img src="./assets/img/azur-mimosa.png" alt="pochette d'album d'azur mimosa">
+            </figure>
+            <figure class="azur-mimosa_img">
+                <img id="img-1" class="azur-mimosa_img "src="./assets/img/azur-mimosa.png">
+                <img id="img-2" class="azur-mimosa_img" src="./assets/img/azur-mimosa.png">
+                <img id="img-3" class="azur-mimosa_img" src="./assets/img/azur-mimosa.png">
+                <img id="img-4" class="azur-mimosa_img" src="./assets/img/azur-mimosa.png">
+                <img id="img-5" class="azur-mimosa_img" src="./assets/img/azur-mimosa.png">
+                <img id="img-6" class="azur-mimosa_img" src="./assets/img/azur-mimosa.png">
+                <img id="img-7" class="azur-mimosa_img" src="./assets/img/azur-mimosa.png">
+                <img id="img-8" class="azur-mimosa_img" src="./assets/img/azur-mimosa.png">
+                <img id="img-9" class="azur-mimosa_img" src="./assets/img/azur-mimosa.png">
+                <img id="img-10" class="azur-mimosa_img" src="./assets/img/azur-mimosa.png">
+            </figure>
+            
+            <div class="text_titre-spotify">
+                <h2 id= "azur-mimosa_title">AZUR MIMOSA</h2>
+                <div class="spotify">
+                    <div class="spotify_text">
+                        <h3>Disponible sur Spotify</h3>
+                        <p>Écouter le nouvel album sur spotify</p>
+                    </div>
+                    <div class="spotify_icons">
+                        <img id="fleche" src="./assets/img/fleche.png" alt=" flecheDroite">
+                        <a href="https://open.spotify.com/artist/1YG9iUkHCKcIEopGLn5QYb" aria-label="Spotify" target="_blank"><img id="spotify_logo"  src="./assets/img/spotify.png" alt="spotify logo"></a>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <div class="fond_noir">
+            <div class="who_is">
+                <h2 id="who_is_title">Qui est Delazur?</h2>
+                <p>« La seule chose qui règle tous les problèmes, c'est danser » disait James Brown. Delazur en a fait sa
+                mission. Issus de la florissante scène de Québec, les gars de Delazur offrent un savant mélange de funk
+                rock, heavy disco, hard groove et plein d'autres genres inventés qui impliquent de la distorsion et une
+                quantité non négligeable de mouvements de bassin. Riffs abondants, costumes colorés et plaisir garanti!</p>
+            </div>
+        <div class="carousel">
+            <div class="bio-container">
+                <h2 id="alain"> ALAIN JASMINE </h2>
+                <div class="image-container">
+                    <img src="./assets/img/fred.jpeg" alt="Alain Jasmine photo">
+                    <div class="overlay"> 
+                        <table>
+                            <tr>
+                                <th headers="">Instrument</th>
+                                <td headers="">Voix</td>
+                            </tr>
+                            <tr>
+                                <th headers="">Fruit totem</th>
+                                <td headers="">Orange, comme mes cheveux de feu</td>
+                            </tr>
+                            <tr>
+                                <th headers="">Partie de corps préférée</th>
+                                <td headers="">Ma machoîre découpée juste du côté droit</td>
+                            </tr>
+                            <tr>
+                                <th headers="">Nom de mon ami imaginaire</th>
+                                <td headers="">Dove - il n'existe pas pour de vrai</td>
+                            </tr>
+                            <tr>
+                                <th headers="">Salopette: pour ou contre?</th>
+                                <td headers="">Oui si tu la portes pour peindre parce que t'es un artiste maudit</td>
+                            </tr>
+                            <tr>
+                                <th headers="">C'est quoi ta classe D&D ?</th>
+                                <td headers="">Clairement barde</td>
+                            </tr>
+                        </table> 
+                    </div>
+                </div>
+            </div>
+            <div class="bio-container">
+                <h2 id="jacques">JACQUES DANGER</h2>
+                <div class="image-container ">
+                    <img src="./assets/img/jee.jpeg" alt="Jacques Danger Photo">
+                    <div class="overlay"> 
+                        <table>
+                            <tr>
+                                <th headers="">Instrument</th>
+                                <td headers="">Guitare / Back Vocals</td>
+                            </tr>
+                            <tr>
+                                <th headers="">Fruit totem</th>
+                                <td headers="">Fruit de la passion</td>
+                            </tr>
+                            <tr>
+                                <th headers="">Partie de corps préférée</th>
+                                <td headers="">Mes cheveux sexyment bouclés</td>
+                            </tr>
+                            <tr>
+                                <th headers="">Nom de mon ami imaginaire</th>
+                                <td headers="">Arnold</td>
+                            </tr>
+                            <tr>
+                                <th headers="">Salopette: pour ou contre?</th>
+                                <td headers="">Pour, c'est la classe!</td>
+                            </tr>
+                            <tr>
+                                <th headers="">C'est quoi ta classe D&D ?</th>
+                                <td headers="">Elfe druide</td>
+                            </tr>
+                        </table> 
+                    </div>
+                </div>
+            </div>
+            <div class="bio-container">
+            <h2 id="dove">DOVE</h2>
+                <div class="image-container ">
+                    <img src="./assets/img/dove.jpeg">
+                    <div class="overlay">
+                        <table>
+                            <tr>
+                                <th headers="">Instrument</th>
+                                <td headers="">Guitare basse</td>
+                            </tr>
+                            <tr>
+                                <th headers="">Fruit totem</th>
+                                <td headers="">Un kiwi sans poils</td>
+                                </tr>
+                                <tr>
+                                    <th headers="">Partie de corps préférée</th>
+                                    <td headers="">Mes molets, ils sont plus découpés que la machoire d'Alain</td>
+                                </tr>
+                                <tr>
+                                    <th headers="">Nom de mon ami imaginaire</th>
+                                    <td headers="">Si je suis irréel, est-ce que je peux avoir des amis imaginaires?</td>
+                                </tr>
+                                <tr>
+                                    <th headers="">Salopette: pour ou contre?</th>
+                                    <td headers="">Pour, si tu la portes avec classe. Noire avec chemise, noeud pap, soulier de cuir et chaînes en or.</td>
+                                </tr>
+                                <tr>
+                                    <th headers="">C'est quoi ta classe D&D ?</th>
+                                    <td headers="">Un gnome roublard</td>
+                                </tr>
+                            </table> 
+                        </div>
+                    </div>
+                </div>
+            <div class="bio-container">
+                <h2 id="dr_homme">DR. HOMME </h2>
+                <div class="image-container ">
+                    <img src="./assets/img/chelou.jpeg">
+                    <div class="overlay">
+                        <table>
+                            <tr>
+                                <th headers="">Instrument</th>
+                                <td headers="">Batterie</td>
+                            </tr>
+                            <tr>
+                                <th headers="">Fruit totem</th>
+                                <td headers="">Pamplemousse</td>
+                            </tr>
+                            <tr>
+                                <th headers="">Partie de corps préférée</th>
+                                <td headers="">Mes fesses dans des jeans tight</td>
+                            </tr>
+                            <tr>
+                                <th headers="">Nom de mon ami imaginaire</th>
+                                <td headers="">Capucine</td>
+                            </tr>
+                            <tr>
+                                <th headers="">Salopette: pour ou contre?</th>
+                                <td headers="">Pour, sur moi et les autres aussi</td>
+                            </tr>
+                            <tr>
+                                <th headers="">C'est quoi ta classe D&D ?</th>
+                                <td headers="">Un orc barbare avec une grosse hache</td>
+                            </tr>
+                        </table> 
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <img src="./assets/img/delazur_logo.png" alt="Logo Delazur">
+        </div>
+        <div>
+            <ul>
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="./spectacles.html">Spectacles</a></li>
+                <li><a href="./boutique.html">Boutique</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.instagram.com/delazurband/" aria-label="Instagram" target="_blank"><i
+                            class="fab fa-instagram"></i></a></li>
+                <li><a href="https://music.apple.com/us/artist/delazur/1502322364" aria-label="Apple Music"
+                        target="_blank"><i class="fab fa-apple"></i></a></li>
+                <li><a href="https://music.youtube.com/channel/UCgWAueQ2PGlzKfPIjrtn05g" aria-label="Youtube Music"
+                        target="_blank"><i class="far fa-play-circle"></i></a></li>
+                <li><a href="https://www.facebook.com/delazurband/" aria-label="Facebook" target="_blank"><i
+                            class="fab fa-facebook"></i></a></li>
+                <li><a href="https://open.spotify.com/artist/1YG9iUkHCKcIEopGLn5QYb" aria-label="Spotify"
+                        target="_blank"><i class="fab fa-spotify"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCNU_NVl0zzl5wluB0_9fNoA" aria-label="Youtube"
+                        target="_blank"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="https://delazur.bandcamp.com/album/azur-mimosa" aria-label="Bandcamp" target="_blank"><i
+                            class="fab fa-bandcamp"></i></a></li>
+            </ul>
+        </div>
+        </div>
+        <div>
+            <p>Production en médias interactifs</p>
+            <p>GR.08 - Mars 2024</p>
+        </div>
+    </footer>
 </body>
+</html>

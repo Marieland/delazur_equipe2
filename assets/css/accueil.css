@@ -1,0 +1,275 @@
+.azur-mimosa{
+  background-color: #f5c555b4;
+  height: 300px;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.azur-mimosa_img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  visibility: hidden;
+  justify-content: flex-start;
+}
+
+.img-mobile img {
+  width: 250px;
+  height: 250px;
+  margin-left: 30%;
+}
+
+#img-1{
+  margin: auto;
+  z-index: 10;
+}
+
+#img-2{
+  display: flex;
+  flex-direction: row;
+  transform: translatex(-85%);
+  z-index: 9;
+  filter: opacity(70%);
+}
+
+#img-3{
+  display: flex;
+  flex-direction: row;
+  transform: translatex(-170%);
+  z-index: 8;
+  filter: opacity(60%);
+}
+
+#img-4{
+  display: flex;
+  flex-direction: row;
+  transform: translatex(-255%);
+  z-index: 7;
+  filter: opacity(55%);
+}
+
+#img-5{
+  display: flex;
+  flex-direction: row;
+  transform: translatex(-340%);
+  z-index: 6;
+  filter: opacity(50%);
+}
+
+#img-6{
+  display: flex;
+  flex-direction: row;
+  transform: translatex(-425%);
+  z-index: 5;
+  filter: opacity(45%);
+}
+
+#img-7{
+  display: flex;
+  flex-direction: row;
+  transform: translatex(-510%);
+  z-index: 4;
+  filter: opacity(40%);
+}
+
+#img-8{
+  display: flex;
+  flex-direction: row;
+  transform: translatex(-595%);
+  z-index: 3;
+  filter: opacity(30%);
+}
+
+#img-9{
+  display: flex;
+  flex-direction: row;
+  transform: translatex(-680%);
+  z-index: 2;
+  filter: opacity(25%);
+}
+
+#img-10{
+  display: flex;
+  flex-direction: row;
+  transform: translatex(-765%);
+  z-index: 1;
+  filter: opacity(20%);
+}
+
+.text_titre-spotify {
+  margin-top: 30px;
+  position: absolute;
+  z-index: 11;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.spotify{
+  display: flex;
+  padding-right: 40px;
+  width: 100%;
+}
+
+.text_titre-spotify > h2 {
+  font: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 4rem;
+}
+
+.spotify_text {
+  font-size: 1.5rem;
+}
+
+.spotify_text p {
+  font-size: 1.7rem;
+}
+
+.spotify_icons {
+  display: flex;
+}
+
+#spotify_logo, #fleche {
+  margin: 10px;
+  height: 35px;
+  width: 35px;
+}
+
+#spotify_logo:hover {
+border: 1px solid #000000;
+box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.4);
+border-radius: 20px;
+}
+
+.fond_noir {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.who_is {
+  padding: 20px;
+}
+
+#who_is_title{
+  color: #d679a6;
+  font-family: 'Damion', serif;
+  font-size: 3rem;
+}
+
+/*creating carousel*/
+.carousel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:30px;
+}
+
+.bio-container{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/*creating overlay*/
+.image-container{
+  position: relative;
+  width:fit-content;
+  height:auto;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.image-container img{
+  width: fit-content;
+  height: 500px;
+  transition: 0.5s ease;
+}
+
+.image-container .overlay {
+  position:absolute;
+  top:0;
+  left:0;
+  width: fit-content;
+  height: 500px;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.image-container:hover .overlay{
+  opacity: 1;
+}
+
+.image-container .overlay  table{
+  color: #fff;
+  font:'Montserrat', sans-serif;
+}
+
+.image-container .overlay p{
+  color: #02d22d;
+}
+
+table{
+  height: 500px;
+  width: 100%;
+  justify-content: left;
+  padding-top: 30px;
+}
+
+#alain ,#jacques ,#dove ,#dr_homme {
+  color: #f5c555;
+  align-items: center;
+  font: 'Montserrat', sans-serif;
+  font-weight: 400;
+  z-index: 2;
+  margin: 10px;
+  position: absolute;
+}
+
+td, th {
+  border-bottom: solid 1px white;
+  font-weight: 300;
+}
+
+
+
+@media screen and (min-width:800px) {
+
+  .carousel{
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    }
+
+    .azur-mimosa_img{
+      visibility: visible;
+    }
+    
+
+    .text_titre-spotify {
+      position: absolute;
+      right: 10%;
+    }
+
+    .img-mobile img {
+      display: none;
+    }
+
+}
+
+
+@media screen and (min-width: 1400px) {
+
+  .carousel {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+}
