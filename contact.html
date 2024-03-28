@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head >    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DELAZUR</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Damion&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/app.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
 </head>
 <body>
 <header>
@@ -23,28 +20,30 @@
             <li><a class="serif" href="./index.html">Accueil</a></li>
             <li><a class="serif" href="./spectacles.html">Spectacles</a></li>
             <li><a class="serif" href="./boutique.html">Boutique</a></li>
-            <li><a class="serif" href="./contact.html" style="border-bottom: 1px solid #d679a6;color: #d679a6;">Contact</a></li>
+            <li><a class="serif active" href="./contact.html">Contact</a></li>
         </ul>
     </nav>
 </header>
 
-<main>
-    <h2 class="serif" style="font-size: 4rem;">Contact</h2>
+<main class="main_contact">
+    <h2 class="contact_h2">Contact</h2>
     <section class="contact-form">
         <form action="/submit-form" method="post">
             <div class="fieldset1">
                 <fieldset>
                     <legend>Informations générales</legend>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="prenom">Prénom</label>
-                            <input type="text" id="prenom" name="prenom" minlength="2"  aria-label="Entrez votre prénom" aria-describedby="prenom-desc" required>
-                            <p class="access" id="prenom-desc">Entrez votre prénom (au moins 2 caractères).</p>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="nom">Nom de famille</label>
-                            <input type="text" id="Nom" name="Nom" minlength="2"  aria-label="Entrez votre nom de famille" aria-describedby="nom-desc" required>
-                            <p class="access" id="nom-desc">Entrez votre nom de famille (au moins 2 caractères).</p>
+                    <div>
+                        <div class="nom">
+                            <div class="form-group">
+                                <label for="prenom">Prénom</label>
+                                <input type="text" id="prenom" name="prenom" minlength="2"  aria-label="Entrez votre prénom" aria-describedby="prenom-desc" required>
+                                <p class="access" id="prenom-desc">Entrez votre prénom (au moins 2 caractères).</p>
+                            </div>
+                            <div class="form-group">
+                                <label for="nom">Nom de famille</label>
+                                <input type="text" id="Nom" name="Nom" minlength="2"  aria-label="Entrez votre nom de famille" aria-describedby="nom-desc" required>
+                                <p class="access" id="nom-desc">Entrez votre nom de famille (au moins 2 caractères).</p>
+                            </div>
                         </div>
                     </div>
                     <div class="form-group">
@@ -52,34 +51,13 @@
                         <input type="email" id="email" name="email" aria-label="Entrez votre mail" aria-describedby="mail-desc" required>
                         <p class="access" id="mail-desc">Entrez votre mail.</p>
                     </div>
-                    <script>
-                        function validateEmail() {
-                            var email = document.getElementById('email').value;
-                            var domain = email.substring(email.lastIndexOf("@") + 1);
-                            if (domain.toLowerCase() === "yahoo.com") {
-                                alert("Nous n'acceptons pas les adresses e-mail Yahoo.");
-                                return false;
-                            }
-                            return true;
-                        }
-                        // Associez la fonction validatePassword au formulaire
-                        document.addEventListener('DOMContentLoaded', function () {
-                            var form = document.querySelector('form');
-                            form.addEventListener('submit', function (event) {
-                                if (!validateEmail()) {
-                                    event.preventDefault(); // Empêche l'envoi du formulaire si le mot de passe est incorrect
-                                }
-                            });
-                        });
-                    </script>
-                
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
+                    <div class="age">
+                        <div class="form-group">
                             <label for="dob">Date de naissance</label>
                             <input type="date" id="dob" name="dob" aria-describedby="date-naissance-desc" required>
                             <p class="access" id="date-naissance-desc">Entrez votre date de naissance.</p>
                         </div>
-                        <div class="form-group col-md-6">
+                        <div class="form-group">
                             <label for="age">Et ton âge ?</label>
                             <input type="number" id="age" name="age" max="99" aria-label="Entrez votre âge" aria-describedby="age-desc" required>
                             <p class="access" id="age-desc">Entrez votre âge.</p>
@@ -92,25 +70,24 @@
                     </div>
                 </fieldset>
             </div>    
-            <br>
 
             <div class="fieldset2">
                 <fieldset>
                     <legend>Adresse</legend>
                         <div class="form-row">
-                            <div class="form-group col-md-3">
+                            <div class="form-group">
                                 <label for="num_civique">Numéro civique</label>
                                 <input type="text" id="num_civique" name="num_civique" aria-label="Entrez votre numéro civique" aria-describedby="civ-desc" required>
                                 <p class="access" id="civ-desc">Entrez votre numéro civique.</p>
                             </div>
-                            <div class="form-group col-md-3">
+                            <div class="form-group">
                                 <label for="rue">Rue</label>
                                 <input type="text" id="rue" name="rue" aria-label="Entrez votre rue" aria-describedby="rue-desc" required>
                                 <p class="access" id="rue-desc">Entrez votre rue.</p>
                             </div>
-                            <div class="form-group col-md-2">
+                            <div class="form-group">
                                 <label for="province">Province</label>
-                                <select aria-label="Default select example" name="province" id="province"  style="background: transparent; border: 1px solid #000; color: #000;" aria-label="select province" aria-describedby="prov-desc" required>
+                                <select aria-label="Default select example" name="province" id="province" aria-label="select province" aria-describedby="prov-desc" required>
                                 <p class="access" id="prov-desc">Select Province.</p>      
                                     <option selected>Choisir province</option>
                                     <option value="alberta">Alberta</option>
@@ -128,12 +105,12 @@
                                     <option value="Yukon">Yukon</option>
                                 </select>
                             </div>
-                            <div class="form-group col-md-2">
+                            <div class="form-group">
                                 <label for="pays">Pays</label>
                                 <input type="text" id="pays" name="pays" value="Canada"  aria-describedby="pays-desc" readonly>
                                 <p class="access" id="pays-desc">Pays.</p> 
                             </div>
-                            <div class="form-group col-md-2">
+                            <div class="form-group">
                                 <label for="code_postal">Code Postal</label>
                                 <input type="text" id="code_postal" name="code_postal" pattern="^(?!.*[DFIOQU])[A-VXY][0-9][A-Z] ?[0-9][A-Z][0-9]$" title="Enter a valid Canadian postal code" aria-label="Entrez votre code postal" aria-describedby="postal-desc" required>
                                 <p class="access" id="postal-desc">Entrez code postal.</p> 
@@ -145,62 +122,63 @@
             <div class="fieldset3">
                 <fieldset>
                     <div class="form-row">
-                        <div class="form-group col-md-3">
+                        <div class="form-group">
                             <label for="couleur">Votre couleur préférée ?</label>
-                            <input style="height:50px; width: 70px;" type="color" id="couleur" name="couleur"  aria-label="Entrez votre couleur préférée" aria-describedby="color-desc" required>
+                            <input type="color" id="couleur" name="couleur"  aria-label="Entrez votre couleur préférée" aria-describedby="color-desc" required>
                             <p class="access" id="color-desc">Entrez votre couleur préférée.</p> 
                         </div>
-                        <div class="form-group col-md-3">
+                        <div class="form-group">
                             <label for="images">Vos images préférées ?</label>
                             <input type="file" id="images" name="images" accept="image/*" aria-label="select images votre images préférées" aria-describedby="img-desc" multiple>
                             <p class="access" id="img-desc">Select votre images préférées.</p> 
                         </div>
-                        <div class="form-group col-md-3">
+                        <div class="form-group">
                             <label for="mois">Votre mois préféré ? De quelle année ?</label>
                             <input type="month" id="mois" name="mois" aria-label="Votre mois préféré et de quelle année " aria-describedby="month-desc" required>
                             <p class="access" id="month-desc">Votre mois préféré et de quelle année.</p> 
                         </div>
-                        <div class="form-group col-md-3">
+                        <div class="form-group">
                             <label for="semaine">Votre semaine préférée de tous les temps ?</label>
                             <input type="week" id="semaine" name="semaine" aria-label="Votre semaine préférée de tous les temps" aria-describedby="week-desc" required>
                             <p class="access" id="week-desc">Votre semaine préférée de tous les temps.</p> 
                         </div>
                     </div>  
                     <div class="form-row">
-                        <div class="form-group col-md-6">
+                        <div class="form-group">
                             <label for="site">Un site que nous devons découvrir ?</label>
                             <input type="url" id="site" name="site" aria-label="Entrez url de site que vous devez découvrir" aria-describedby="url-desc" required>
                             <p class="access" id="url-desc">Entrez url de site que vous devez découvrir.</p> 
                         </div>
-                        <div class="form-group col-md-6">
+                        <div class="form-group">
                             <label for="note">Quelle note lui donnez-vous ?</label>
                             <input type="range" name="note" id="note" min="0" max="10" step="1" aria-label="Entrez la note" aria-describedby="note-desc" required/>
                             <p class="access" id="note-desc">Entrez la note.</p> 
                         </div>
                     </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
+                    <div class="form-row show">
+                        <div class="form-group">
                             <label for="show">La date et heure du show que tu veux venir voir ?</label>
                             <input type="datetime-local" id="show" name="show" aria-label="Entrez votre date et heure du show que tu veux venir voir" aria-describedby="datetime-desc" required>
                             <p class="access" id="datetime-desc">Entrez votre date et heure.</p> 
                         </div>
-                        <label>Durant ce show, tu veux…</label>
-                        <div class="checkbox-cont">
-                            <div class="form-check form-check-inline">
-                                <br>
-                                <label class="form-check-label" for="inlineCheckbox1"> Dancer</label>
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Dancer" aria-label="select Dancer" aria-describedby="op1-desc">
-                                <p class="access" id="op1-desc">select Dancer.</p> 
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <label class="form-check-label" for="inlineCheckbox2">groover</label>
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="groover" aria-label="select groover" aria-describedby="op2-desc">
-                                <p class="access" id="op2-desc">select groover.</p> 
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <label class="form-check-label" for="inlineCheckbox3">me coucher tard</label>
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="me coucher tard" aria-label="select me coucher tard" aria-describedby="op3-desc">
-                                <p class="access" id="op3-desc">select me coucher tard.</p> 
+                        <div id="checkbox">
+                            <label>Durant ce show, tu veux…</label>
+                            <div class="checkbox-cont">
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label" for="inlineCheckbox1"> Danser</label>
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Dancer" aria-label="select Dancer" aria-describedby="op1-desc">
+                                    <p class="access" id="op1-desc">select Dancer.</p> 
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label" for="inlineCheckbox2">Groover</label>
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="groover" aria-label="select groover" aria-describedby="op2-desc">
+                                    <p class="access" id="op2-desc">select groover.</p> 
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label" for="inlineCheckbox3">Me coucher tard</label>
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="me coucher tard" aria-label="select me coucher tard" aria-describedby="op3-desc">
+                                    <p class="access" id="op3-desc">select me coucher tard.</p> 
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -210,31 +188,27 @@
             <div class="fieldset4">
                 <fieldset>
                     <legend> Votre membre du groupe préféré ?</legend>
-                        <div class="checkbox-container">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="Alain Jasmine " aria-label="select Alain Jasmine" aria-describedby="op4-desc">
-                                <label class="form-check-label" for="inlineCheckbox4">Alain Jasmine </label>
-                                <p class="access" id="op4-desc">select Alain Jasmine.</p> 
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="Jacque danger" aria-label="select Jacque danger" aria-describedby="op5-desc">
-                                <label class="form-check-label" for="inlineCheckbox5">Jacque danger </label>
-                                <p class="access" id="op5-desc">select Jacque danger.</p> 
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="Dove" aria-label="select Dove" aria-describedby="op6-desc">
-                                <label class="form-check-label" for="inlineCheckbox6">Dove </label>
-                                <p class="access" id="op6-desc">select Dove.</p> 
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="Dr Homme" aria-label="select Dr Homme" aria-describedby="op7-desc">
-                                <label class="form-check-label" for="inlineCheckbox7">Dr Homme </label>
-                                <p class="access" id="op7-desc">select Dr Homme.</p> 
-                            </div>
+                        <div class="radio-container">
+                            <label class="form-radio-label">
+                                <input class="form-radio-input" type="radio" name="membre" value="Alain Jasmine " aria-label="select Alain Jasmine" aria-describedby="op4-desc">
+                                Alain Jasmine
+                            </label>
+                            <label class="form-radio-label" for="inlineCheckbox5">
+                                <input class="form-radio-input" type="radio" name="membre" value="Jacque danger" aria-label="select Jacque danger" aria-describedby="op5-desc">
+                                Jacque Danger 
+                            </label>
+                            <label class="form-radio-label" for="inlineCheckbox6">
+                                <input class="form-radio-input" type="radio" name="membre" value="Dove" aria-label="select Dove" aria-describedby="op6-desc">
+                                Dove
+                            </label>
+                            <label class="form-radio-label" for="inlineCheckbox7">
+                                <input class="form-radio-input" type="radio" name="membre" value="Dr Homme" aria-label="select Dr Homme" aria-describedby="op7-desc">
+                                Dr Homme 
+                            </label>
                         </div>
                 </fieldset>
             </div>    
-              
+
             <div class="fieldset5">
                 <fieldset>
                     <div class="form-group">
@@ -243,40 +217,12 @@
                         <p class="access" id="pswd-desc">Entrez votre mot de passe.</p> 
                         <i class="bi bi-eye-slash" id="togglePassword"></i>
                     </div>
-                    <script>
-                        const togglePassword = document
-                            .querySelector('#togglePassword');
-                        const password = document.querySelector('#password');
-                        togglePassword.addEventListener('click', () => {
-                            const type = password
-                                .getAttribute('type') === 'password' ?
-                                'text' : 'password';
-                            password.setAttribute('type', type);
-                            togglePassword.classList.toggle('bi-eye');
-                        });
-                        // Fonction pour valider le mot de passe
-                        function validatePassword() {
-                            const enteredPassword = document.getElementById('password').value;
-                            if (enteredPassword !== 'Kaput Draconis') {
-                                alert('Mot de passe incorrect.');
-                                return false;
-                            }
-                            return true;
-                        }
-                        // Associez la fonction validatePassword au formulaire
-                        const form = document.querySelector('form');
-                        form.addEventListener('submit', function(event) {
-                            if (!validatePassword()) {
-                                event.preventDefault(); // Empêche l'envoi du formulaire si le mot de passe est incorrect
-                            }
-                        });
-                    </script>
                 </fieldset>
             </div>    
 
-            <div class="form-actions text-center">
-                <button type="reset" class="btn btn-outline-dark">Réinitialiser</button>
-                <button type="submit" class="btn btn-outline-dark">Soumettre</button>
+            <div class="form-actions">
+                <button type="reset">Réinitialiser</button>
+                <button type="submit">Soumettre</button>
             </div>
         </form>
     </section>
